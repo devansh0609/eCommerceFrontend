@@ -1,0 +1,93 @@
+.carou{
+    margin: 0 20px;
+    padding: 70px;
+    background-image: url("D:\VS code files\Web Development\Demo\my-react-app\src\images\homeImage.jpg");
+    height: 70vh;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.carou h2{
+    font-size: 100px;
+}
+.carou p{
+    font-size: 20px;
+}
+.head{
+    text-align: center;
+    margin: 30px 0;
+    font-size: xx-large;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+.paraDiv{
+    padding: 1%;
+}
+.imgDiv{
+    width: 50%;
+    padding: 2%;
+}
+.imgDiv img{
+    width: -webkit-fill-available;
+    width: -mox-available;
+    width: fill-available;
+}
+.paraHead{
+    font-style: oblique;
+    font-size: larger;
+}
+.para{
+    text-align: justify;
+}
+.team{
+    border-style: groove;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin: 2%;
+}
+.eveTeam{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.oddTeam{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.teamBout{
+    text-align: justify;
+    padding: 1% 5%;
+}
+@media screen and (max-width : 1023px) {
+    .div{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 767px) {
+    .eveTeam{
+        flex-direction: column;
+    }
+    .oddTeam{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 426px) {
+    .carou>h2{
+        font-size: 70px;
+    }
+}

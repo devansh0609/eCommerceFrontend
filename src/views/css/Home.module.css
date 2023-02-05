@@ -1,0 +1,75 @@
+.carou{
+    margin: 0 20px;
+    padding: 70px;
+    background-image: url("D:\VS code files\Web Development\Demo\my-react-app\src\images\homeImage.jpg");
+    height: 70vh;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.carou h2{
+    font-size: 100px;
+}
+.carou p{
+    font-size: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: fit-content;
+    padding: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 10px 2px;
+    border: 2px solid grey;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.link{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 0;
+    height: 30px;
+}
+.divImg{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cimg{
+    width: 60%;
+    margin: 0px 80px;
+}
+.hid{
+    visibility: hidden;
+    position: absolute;
+
+}
+@media  screen and (max-width:1080px) {
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+}
+@media screen and (max-width : 426px) {
+    .carou>h2{
+        font-size: 70px;
+    }
+}

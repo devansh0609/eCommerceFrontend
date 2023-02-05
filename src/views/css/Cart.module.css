@@ -1,0 +1,51 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border : ridge;
+    padding: 0;
+}
+.cardInfo{
+    display: inline-block;
+    text-align: justify;
+    width: 33%;
+    padding: 40px;
+    height: 100%;
+}
+.cartChanger{
+    display: inline-block;
+    width: 33%;
+    padding: 80px 40px;
+    height: 100%;
+}
+.cimg{
+    width : 90%;
+    height: 80%;
+    padding: 0px 20%;
+}
+.remButton{
+    border: 0;
+    background:none;
+    color: blue;
+    margin: 10%;
+}
+.crementBut{
+    width: 30%;
+    margin: 0px 20px;
+}
+.remButton:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width : 768px) {
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardInfo{
+        width : 90%;
+    }
+    .cartChanger{
+        width : 90%;
+    }
+}

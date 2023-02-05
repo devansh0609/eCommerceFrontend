@@ -1,0 +1,40 @@
+.box1 a, .box2 a{
+    cursor: pointer;
+}
+.search{
+    top: 0px;
+}
+.search input{
+    border-radius: 5px;
+    width: 300px;
+    display: inline;
+}
+.search button{
+    height: 100%;
+    margin: 0 3px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.search img{
+    width: 20px;
+    display: inline;
+}
+.search input{
+    background-color: transparent;
+}
+.dropdown{
+    background: transparent;
+    border: none;
+    width: 85px;
+}
+@media screen and (min-width:992px) {
+    .box2{
+        display:flex;
+        justify-content:end;
+    }
+}
+@media screen and (max-width:720px) {
+    .search input{
+        width: auto;
+    }
+}

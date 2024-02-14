@@ -75,7 +75,8 @@ function Register(){
                         <input type="password" onChange={change4} name = "cnfm" value = {cnfm} required/>
                         <label id="lab4">Confirm Password</label>
                     </div>
-                    <button className={styles.btn} onClick={(e)=>handleSubmit(e)}>Register</button>
+                    <button className={styles.btn} onClick={(e)=>handleSubmit(e)}>
+                        <input type = "submit">Register</input></button>
                     <p className={styles.text}>Already have an Account? 
                     <a onClick={()=>navigate("/login")}> Login Here</a></p>
                 </form>
